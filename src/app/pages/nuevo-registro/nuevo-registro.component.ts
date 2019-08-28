@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Asistente } from '../../interfaces/asistente.interface';
+import { GuardarInfoService } from '../../services/guardar-info.service';
 
 @Component({
   selector: 'app-nuevo-registro',
@@ -9,18 +10,28 @@ import { Asistente } from '../../interfaces/asistente.interface';
 export class NuevoRegistroComponent implements OnInit {
 
   submitted = false;
-errorCoincidenciaCorreo = false;
+  errorCoincidenciaCorreo = false;
   asistente: Asistente;
 
-  constructor() {
+  constructor(private guardarService: GuardarInfoService) {
     this.asistente = new Asistente();
    }
 
   ngOnInit() {
   }
 
-  guardar() {
+  guardarAsistente() {
     console.log('guardar');
+    this.guardarService.nuevoParticipante(this.asistente).subscribe ( (data) => {
+
+      if (data['estado'] === 1) {
+        console.log('si guardó');
+        this.submitted = true;
+      } else {
+        console.log('No guardó');
+      }
+    });
+
   }
 
   atras() {

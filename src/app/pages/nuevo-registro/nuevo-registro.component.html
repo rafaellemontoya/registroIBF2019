@@ -1,620 +1,581 @@
 <section id="content_wrapper">
-        <!-- Start: Topbar-Dropdown-->
-        <div id="topbar-dropmenu" class="alt">
-          <div class="topbar-menu row">
-            <div class="col-xs-4 col-sm-2"><a href="#" class="metro-tile bg-primary light"><span class="glyphicon glyphicon-inbox text-muted"></span><span class="metro-title">Messages</span></a></div>
-            <div class="col-xs-4 col-sm-2"><a href="#" class="metro-tile bg-info light"><span class="glyphicon glyphicon-user text-muted"></span><span class="metro-title">Users</span></a></div>
-            <div class="col-xs-4 col-sm-2"><a href="#" class="metro-tile bg-success light"><span class="glyphicon glyphicon-headphones text-muted"></span><span class="metro-title">Support</span></a></div>
-            <div class="col-xs-4 col-sm-2"><a href="#" class="metro-tile bg-system light"><span class="glyphicon glyphicon-facetime-video text-muted"></span><span class="metro-title">Videos</span></a></div>
-            <div class="col-xs-4 col-sm-2"><a href="#" class="metro-tile bg-warning light"><span class="fa fa-gears text-muted"></span><span class="metro-title">Settings</span></a></div>
-            <div class="col-xs-4 col-sm-2"><a href="#" class="metro-tile bg-alert light"><span class="glyphicon glyphicon-picture text-muted"></span><span class="metro-title">Pictures</span></a></div>
-          </div>
-        </div>
-        <!-- Start: Topbar-->
-        <header id="topbar" class="alt">
-          <div class="topbar-left">
-            <ol class="breadcrumb">
-              <li class="crumb-active"><a href="index.html">Dashboard</a></li>
-              <li class="crumb-icon"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
-              <li class="crumb-link"><a href="index.html">Home</a></li>
-              <li class="crumb-trail">Dashboard</li>
-            </ol>
-          </div>
-          <div class="topbar-right">
-            <div class="ib topbar-dropdown">
-              
-            </div>
-            <div id="toggle_sidemenu_r" class="ml15 ib va-m"></div>
-          </div>
-        </header>
-        <!-- Begin: Content-->
-        <section id="content" class="table-layout animated fadeIn">
-          <!-- begin: .tray-center-->
-          <div class="tray tray-center">
-            <!-- Begin: Content Header-->
-            <div class="content-header">
-              <h2>Registro en sitio <b>IBFormun 2019</b> 
-              </h2>
-              <p class="lead"></p>
-            </div>
-            <!-- Validation Example-->
-            <div style="padding-bottom: 175px;" class="admin-form theme-primary mw1000 center-block">
-              <div class="panel heading-border">
-                    <form (keydown.enter)="$event.preventDefault()" #asistenteForm="ngForm">
+  <!-- Start: Topbar-Dropdown-->
+  <div id="topbar-dropmenu" class="alt">
+    <div class="topbar-menu row">
+      <div class="col-xs-4 col-sm-2">
+        <a href="#" class="metro-tile bg-primary light"
+          ><span class="glyphicon glyphicon-inbox text-muted"></span
+          ><span class="metro-title">Messages</span></a
+        >
+      </div>
+      <div class="col-xs-4 col-sm-2">
+        <a href="#" class="metro-tile bg-info light"
+          ><span class="glyphicon glyphicon-user text-muted"></span
+          ><span class="metro-title">Users</span></a
+        >
+      </div>
+      <div class="col-xs-4 col-sm-2">
+        <a href="#" class="metro-tile bg-success light"
+          ><span class="glyphicon glyphicon-headphones text-muted"></span
+          ><span class="metro-title">Support</span></a
+        >
+      </div>
+      <div class="col-xs-4 col-sm-2">
+        <a href="#" class="metro-tile bg-system light"
+          ><span class="glyphicon glyphicon-facetime-video text-muted"></span
+          ><span class="metro-title">Videos</span></a
+        >
+      </div>
+      <div class="col-xs-4 col-sm-2">
+        <a href="#" class="metro-tile bg-warning light"
+          ><span class="fa fa-gears text-muted"></span
+          ><span class="metro-title">Settings</span></a
+        >
+      </div>
+      <div class="col-xs-4 col-sm-2">
+        <a href="#" class="metro-tile bg-alert light"
+          ><span class="glyphicon glyphicon-picture text-muted"></span
+          ><span class="metro-title">Pictures</span></a
+        >
+      </div>
+    </div>
+  </div>
+  <!-- Start: Topbar-->
+  <header id="topbar" class="alt">
+    <div class="topbar-left">
+      <ol class="breadcrumb">
+        <li class="crumb-active"><a href="index.html">Dashboard</a></li>
+        <li class="crumb-icon">
+          <a href="index.html"
+            ><span class="glyphicon glyphicon-home"></span
+          ></a>
+        </li>
+        <li class="crumb-link"><a href="index.html">Home</a></li>
+        <li class="crumb-trail">Dashboard</li>
+      </ol>
+    </div>
+    <div class="topbar-right">
+      <div class="ib topbar-dropdown"></div>
+      <div id="toggle_sidemenu_r" class="ml15 ib va-m"></div>
+    </div>
+  </header>
+  <!-- Begin: Content-->
+  <section id="content" class="table-layout animated fadeIn">
+    <!-- begin: .tray-center-->
+    <div class="tray tray-center">
+      <!-- Begin: Content Header-->
+      <div class="content-header">
+        <h2>Registro en sitio <b>IBFormun 2019</b></h2>
+        <p class="lead"></p>
+      </div>
+      <!-- Validation Example-->
+      <div
+        style="padding-bottom: 175px;"
+        class="admin-form theme-primary mw1000 center-block"
+      >
+        <div class="panel heading-border">
+          <form
+            (keydown.enter)="$event.preventDefault()"
+            #asistenteForm="ngForm"
+          >
+            <!-- mensaje agregado -->
 
-                            
-                                        
-                              <!-- mensaje agregado -->
-                    
-                              <div  [hidden]="!submitted" class="section1_bottom_wrapper">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6">
-                                            
-                                            <div class="alert success">
-                                                <div class="content_img">
-                                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="content_text">
-                                                    <h4>Registro creado exitosamente!</h4>
-                                                </div>
-                    
-                    
-                                            </div>
-                                            
-                    
-                                            <div class="row">
-                                                
-                                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                                                    
-                                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
-                                                        <button class="section2_btn btn22" (click)="atras()" type="button">Continuar </button>
-                    
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
-                                                        <button class="section2_btn btn33" routerLink="/inicio" type="button">Volver al inicio</button>
-                    
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                    
-                    
-                                            
-                    
-                    
-                    
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- fin mensaje agregado -->
-                        
-                                    <!--Column-->
-                                    <div [hidden]="submitted">
-                                    <div class="panel-body bg-light">
-                                            <div class="section-divider mt20 mb40"><span> Información personal</span></div>
-                                            <!-- .section-divider-->
-                                            <div id="spy1" class="section row">
-                                            <!--Form Group-->
-                                            <!--Renglón-->
-                                            <div class="col-md-4">
-                                                <div class="field-label">Nombre <sup>*</sup></div>
-                                                <input type="text" required [(ngModel)]="asistente.nombre" name="nombre" #nombre="ngModel" value="" placeholder=""  class="gui-input" class="gui-input">
-                                                <div [hidden]="nombre.valid || nombre.pristine" class="alert alert-danger">
-                                                        Se necesita un nombre
-                                                </div>
-                                            </div>
-                    
-                                            
-                                            <div class="col-md-8">
-                                                <div class="field-label">Apellido <sup>*</sup></div>
-                                                <input type="text" required [(ngModel)]="asistente.apellidos" name="apellidos" #apellidos="ngModel" value="" placeholder=""  class="gui-input">
-                                                <div [hidden]="apellidos.valid || apellidos.pristine" class="alert alert-danger">
-                                                        Se necesitan los apellidos
-                                                </div>
-                                            </div>
-                    
-                                        </div>
-                    
-                                            <!--Renglón-->
-                                            <div class="form-group col-md-4 col-sm-4 col-xs-12">
-                                                <div class="field-label">Email <sup>*</sup></div>
-                                                <input type="text" required [(ngModel)]="asistente.email" [email]="true" name="email" #email="ngModel" value="" placeholder=""  class="gui-input">
-                                                <div [hidden]="email.valid || email.pristine " class="alert alert-danger">
-                                                    Email inválido
-                                                </div>
-                                                <div [hidden]="!errorCoincidenciaCorreo " class="alert alert-danger">
-                                                    Error! El correo electrónico ya se ha registrado
-                                                </div>
-                                            </div>
-                    
-                                            
-                                            <div class="form-group col-md-2 col-sm-2 col-xs-12">
-                                                <div class="field-label">Teléfono <sup>*</sup></div>
-                                                <input type="tel" required [(ngModel)]="asistente.telefono" name="telefono" #telefono="ngModel" value="" placeholder=""  class="gui-input">
-                                                <div [hidden]="telefono.valid || telefono.pristine" class="alert alert-danger">
-                                                        Se necesita un telefono
-                                                </div>
-                                            </div>
-                                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                    <div class="field-label">Fecha de nacimiento <sup>*</sup></div>
-                                                    <input type="tel" required [(ngModel)]="asistente.fechaNacimiento" name="fechaNacimiento" #fechaNacimiento="ngModel" value="" placeholder=""  class="gui-input">
-                                                    <div [hidden]="fechaNacimiento.valid || fechaNacimiento.pristine" class="alert alert-danger">
-                                                            Se necesita una fechaNacimiento
-                                                    </div>
-                                                </div>
+            <div [hidden]="!submitted" class="section1_bottom_wrapper" style="background: #70ca63;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6">
+                    <div class="alert success">
+                      <div class="content_img">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                      </div>
+                      <div class="content_text">
+                        <h4>Registro creado exitosamente!</h4>
+                      </div>
+                    </div>
 
-                                                <div class="form-group col-md-4 col-sm-4 col-xs-12">
-                                                    <div class="field-label">Género <sup>*</sup></div>
-                                                    <label class="field select">
-                                                    <select id="estado" required [(ngModel)]="asistente.estado" name="estado" #power="ngModel"class="gui-input">
-                                                        <option value='aguascalientes'>Masculino</option>
-                                                        <option value='Baja California'>Femenino</option>
-                                                        
-                                                    </select><i class="arrow"></i>
-                                                </label>
-                                                </div>
-
-                                            </div>
-                                        
-
-                                    
-                                    <div class="section-divider mv40"><span> Domicilio personal</span></div>
-                    <!-- .section-divider-->
-                                        <div class="section row">
-                                            <!--Renglón-->
-                                            <div class="form-group col-md-4 col-sm-4 col-xs-12">
-                                                    <div class="field-label">Calle  <sup>*</sup></div>
-                                                    <input type="text" required [(ngModel)]="asistente.calle" name="calle" #calle="ngModel" value="" placeholder="Calle "class="gui-input">
-                                                    <div [hidden]="calle.valid || calle.pristine" class="alert alert-danger">
-                                                            Se necesita una calle 
-                                                    </div>
-                                                    
-                                                </div>
-                                                <div class="form-group col-md-2 col-sm-2 col-xs-12">
-                                                        <div class="field-label">Número exterior <sup></sup></div>
-                                                        
-                                                        <input type="text" [(ngModel)]="asistente.numeroExterior" name="numeroExterior" #numeroExterior="ngModel" value="" placeholder=""  class="gui-input">
-                                                        <div [hidden]="numeroExterior.valid || numeroExterior.pristine" class="alert alert-danger">
-                                                                Numero Exterior no válido
-                                                        </div>
-                                                    </div>
-                                                <div class="form-group col-md-2 col-sm-2 col-xs-12">
-                                                    <div class="field-label">Número interior <sup></sup></div>
-                                                    
-                                                    <input type="text" [(ngModel)]="asistente.numeroInterior" name="numeroInterior" #numeroInterior="ngModel" value="" placeholder=""  class="gui-input">
-                                                    <div [hidden]="numeroInterior.valid || numeroInterior.pristine" class="alert alert-danger">
-                                                            Numero interior no válido
-                                                    </div>
-                                                </div>
-
-                                            <div class="form-group col-md-4 col-sm-4 col-xs-12">
-                                                <div class="field-label">Estado <sup>*</sup></div>
-                                                <label class="field select">
-                                                <select id="estado" required [(ngModel)]="asistente.estado" name="estado" #power="ngModel"class="gui-input">
-                                                    <option value='aguascalientes'>aguascalientes</option>
-                                                    <option value='Baja California'>Baja California</option>
-                                                    <option value='Baja California Sur'>Baja California Sur</option>
-                                                    <option value='Campeche'>Campeche</option>
-                                                    <option value='Chiapas'>Chiapas</option>
-                                                    <option value='Chihuahua'>Chihuahua</option>
-                                                    <option value='Ciudad de México'>Ciudad de México</option>
-                                                    <option value='Coahuila'>Coahuila</option>
-                                                    <option value='Colima'>Colima</option>
-                                                    <option value='Durango'>Durango</option>
-                                                    <option value='Estado de México'>Estado de México</option>
-                                                    <option value='Guanajuato'>Guanajuato</option>
-                                                    <option value='Guerrero'>Guerrero</option>
-                                                    <option value='Hidalgo'>Hidalgo</option>
-                                                    <option value='Jalisco'>Jalisco</option>
-                                                    <option value='Michoacán'>Michoacán</option>
-                                                    <option value='Morelos'>Morelos</option>
-                                                    <option value='Nayarit'>Nayarit</option>
-                                                    <option value='Nuevo León'>Nuevo León</option>
-                                                    <option value='Oaxaca'>Oaxaca</option>
-                                                    <option value='Puebla'>Puebla</option>
-                                                    <option value='Querétaro'>Querétaro</option>
-                                                    <option value='Quintana Roo'>Quintana Roo</option>
-                                                    <option value='San Luis Potosí'>San Luis Potosí</option>
-                                                    <option value='Sinaloa'>Sinaloa</option>
-                                                    <option value='Sonora'>Sonora</option>
-                                                    <option value='Tabasco'>Tabasco</option>
-                                                    <option value='Tamaulipas'>Tamaulipas</option>
-                                                    <option value='Tlaxcala'>Tlaxcala</option>
-                                                    <option value='Veracruz'>Veracruz</option>
-                                                    <option value='Yucatán'>Yucatán</option>
-                                                    <option value='Zacatecas'>Zacatecas</option>
-                                                </select><i class="arrow"></i>
-                                            </label>
-                                            </div>
-                    
-                                            <!--Renglón-->
-                                            
-                    
-                                            <div class="form-group col-md-5 col-sm-5 col-xs-12">
-                                                    <div class="field-label">Colonia <sup>*</sup></div>
-                                                    <input type="text" required [(ngModel)]="asistente.colonia" name="colonia" #colonia="ngModel" value="" placeholder="Colonia" class="gui-input">
-                                                    <div [hidden]="colonia.valid || colonia.pristine" class="alert alert-danger">
-                                                            Se necesita una colonia o municipio
-                                                    </div>
-                                                </div>
-                                            
-                                            <div class="form-group col-md-5 col-sm-5 col-xs-12">
-                                                <div class="field-label">Ciudad <sup>*</sup></div>
-                                                <input type="text" required [(ngModel)]="asistente.ciudadPoblacion" name="ciudad" #ciudad="ngModel" value="" placeholder="Ciudad o población" class="gui-input">
-                                                <div [hidden]="ciudad.valid || ciudad.pristine" class="alert alert-danger">
-                                                        Se necesita una ciudad o población
-                                                </div>
-                                            </div>
-                    
-                    
-                                            <!--Form Group-->
-                                            <div class="form-group col-md-2 col-sm-2 col-xs-12">
-                                                <div class="field-label">Código postal <sup>*</sup></div>
-                                                <input type="number" required [(ngModel)]="asistente.cp" name="cp" #cp="ngModel" value="" placeholder=""  class="gui-input">
-                                                <div [hidden]="cp.valid || cp.pristine" class="alert alert-danger">
-                                                        Se necesita el código postal
-                                                </div>
-                                            </div>
-                                            
-                    
-                                        </div>
-
-
-                                        <div class="section-divider mt20 mb40"><span> Datos de la empresa</span></div>
-                                        <!-- .section-divider-->
-                                        <div id="spy1" class="section row">
-                                    <!--Renglón-->
-                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                            <div class="field-label">Empresa <sup>*</sup></div>
-                                            <input type="text" required [(ngModel)]="asistente.empresa" name="empresa" #empresa="ngModel" value="" placeholder=""  class="gui-input">
-                                            <div [hidden]="empresa.valid || titulo.pristine " class="alert alert-danger">
-                                                Empresa inválida
-                                            </div>
-                                            
-                                        </div>
-                
-                                        
-                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                            <div class="field-label">Empresa a la que representa <sup>*</sup></div>
-                                            <input type="text" required [(ngModel)]="asistente.empresaRepresenta" name="empresaRepresenta" #empresaRepresenta="ngModel" value="" placeholder=""  class="gui-input">
-                                            <div [hidden]="empresaRepresenta.valid || empresaRepresenta.pristine" class="alert alert-danger">
-                                                    Se necesita una Empresa a la que representa
-                                            </div>
-                                        </div>
-                                        
-
-
-                                            <!--Renglon-->
-
-                                            <div class="form-group col-md-4 col-sm-4 col-xs-12">
-                                                <div class="field-label">Tíltulo <sup>*</sup></div>
-                                                <input type="text" required [(ngModel)]="asistente.titulo" name="titulo" #titulo="ngModel" value="" placeholder=""  class="gui-input">
-                                                <div [hidden]="titulo.valid || titulo.pristine " class="alert alert-danger">
-                                                    Título inválido
-                                                </div>
-                                                
-                                            </div>
-                    
-                                            
-                                            <div class="form-group col-md-2 col-sm-2 col-xs-12">
-                                                <div class="field-label">Escolaridad <sup>*</sup></div>
-                                                <input type="text" required [(ngModel)]="asistente.escolaridad" name="escolaridad" #escolaridad="ngModel" value="" placeholder=""  class="gui-input">
-                                                <div [hidden]="escolaridad.valid || escolaridad.pristine" class="alert alert-danger">
-                                                        Se necesita un escolaridad
-                                                </div>
-                                            </div>
-                                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                    <div class="field-label">Ocupacion <sup>*</sup></div>
-                                                    <input type="text" required [(ngModel)]="asistente.ocupacion" name="ocupacion" #ocupacion="ngModel" value="" placeholder=""  class="gui-input">
-                                                    <div [hidden]="ocupacion.valid || ocupacion.pristine" class="alert alert-danger">
-                                                            Se necesita una ocupacion
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group col-md-4 col-sm-4 col-xs-12">
-                                                    <div class="field-label">Cargo <sup>*</sup></div>
-                                                    <input type="text" required [(ngModel)]="asistente.cargo" name="cargo" #cargo="ngModel" value="" placeholder=""  class="gui-input">
-                                                    <div [hidden]="cargo.valid || cargo.pristine " class="alert alert-danger">
-                                                        Cargo inválido
-                                                    </div>
-                                                </div>
-                                                <div class="form-group col-md-4 col-sm-4 col-xs-12">
-                                                    <div class="field-label">Tipo afiliación COPARMEX <sup>*</sup></div>
-                                                    <input type="text" required [(ngModel)]="asistente.cargo" name="cargo" #cargo="ngModel" value="" placeholder=""  class="gui-input">
-                                                    <div [hidden]="cargo.valid || cargo.pristine " class="alert alert-danger">
-                                                        Tipo afiliación COPARMEX inválido
-                                                    </div>
-                                                </div>
-
-
-                                        </div>
-
-
-                                        <div class="section-divider mt20 mb40"><span> Inscripción de un tercero</span></div>
-                                                <!-- .section-divider-->
-                                                <div id="spy1" class="section row">
-                                            <!--Renglón-->
-                                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                    <div class="field-label">Nombre de quien inscribe <sup>*</sup></div>
-                                                    <input type="text" required [(ngModel)]="asistente.nombreInscribe" name="nombreInscribe" #nombreInscribe="ngModel" value="" placeholder=""  class="gui-input">
-                                                    <div [hidden]="nombreInscribe.valid || nombreInscribe.pristine " class="alert alert-danger">
-                                                            Nombre de quien inscribe inválida
-                                                    </div>
-                                                    
-                                                </div>
-                        
-                                                
-                                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                    <div class="field-label">Teléfono de quien inscribe <sup>*</sup></div>
-                                                    <input type="text" required [(ngModel)]="asistente.telefonoInscribe" name="telefonoInscribe" #telefonoInscribe="ngModel" value="" placeholder=""  class="gui-input">
-                                                    <div [hidden]="telefonoInscribe.valid || telefonoInscribe.pristine" class="alert alert-danger">
-                                                            Se necesita un Teléfono de quien inscribe
-                                                    </div>
-                                                </div>
-                                                
-
-
-                                                    <!--Renglon-->
-
-                                                    <div class="form-group col-md-4 col-sm-4 col-xs-12">
-                                                        <div class="field-label">Email de quien inscribe <sup>*</sup></div>
-                                                        <input type="email" required [(ngModel)]="asistente.titulo" name="titulo" #titulo="ngModel" value="" placeholder=""  class="gui-input">
-                                                        <div [hidden]="titulo.valid || titulo.pristine " class="alert alert-danger">
-                                                                Email inválido
-                                                        </div>
-                                                        
-                                                    </div>
-                            
-                                                    
-                                                    
-
-
-                                                </div>
-
-
-                                                <div class="section-divider mv40"><span>Facturación</span></div>
-                                                <!-- .section-divider-->
-                                                                    <div class="section row">
-
-                                                                        <!--Rrnglon-->
-
-                                                                        <div class="form-group col-md-5 col-sm-5 col-xs-12">
-                                                                                <div class="field-label">Razón social <sup>*</sup></div>
-                                                                                <input type="text" required [(ngModel)]="asistente.razonSocial" name="razonSocial" #razonSocial="ngModel" value="" placeholder="razon Social" class="gui-input">
-                                                                                <div [hidden]="razonSocial.valid || razonSocial.pristine" class="alert alert-danger">
-                                                                                        Se necesita una razón social
-                                                                                </div>
-                                                                            </div>
-                                                                        
-                                                                        <div class="form-group col-md-5 col-sm-5 col-xs-12">
-                                                                            <div class="field-label">RFC <sup>*</sup></div>
-                                                                            <input type="text" required [(ngModel)]="asistente.razonSocial" name="razonSocial" #razonSocial="ngModel" value=""  class="gui-input">
-                                                                            <div [hidden]="razonSocial.valid || razonSocial.pristine" class="alert alert-danger">
-                                                                                    Se necesita una ciudad o población
-                                                                            </div>
-                                                                        </div>
-                                                
-                                                                        <div class="form-group col-md-4 col-sm-4 col-xs-12">
-                                                                                <div class="field-label">Forma de pago<sup>*</sup></div>
-                                                                                <label class="field select">
-                                                                                <select id="estado" required [(ngModel)]="asistente.estadoFiscal" name="estadoFiscal" #power="ngModel"class="gui-input">
-                                                                                    <option value='aguascalientes'>Depósito</option>
-                                                                                    <option value='Baja California'>Transferencia </option>
-                                                                                    <option value='Baja California Sur'>Tarjeta débito</option>
-                                                                                    <option value='Campeche'>Tarjeta crédito</option>
-                                                                                    
-                                                                                </select><i class="arrow"></i>
-                                                                            </label>
-                                                                            </div>
-
-                                                                        <!--Renglón-->
-                                                                        <div class="form-group col-md-4 col-sm-4 col-xs-12">
-                                                                                <div class="field-label">Calle de domicilio fiscal  <sup>*</sup></div>
-                                                                                <input type="text" required [(ngModel)]="asistente.calleFiscal" name="calleFiscal" #calleFiscal="ngModel" value="" placeholder="calleFiscal "class="gui-input">
-                                                                                <div [hidden]="calleFiscal.valid || calleFiscal.pristine" class="alert alert-danger">
-                                                                                        Se necesita una calle 
-                                                                                </div>
-                                                                                
-                                                                        </div>
-                                                                            <div class="form-group col-md-2 col-sm-2 col-xs-12">
-                                                                                    <div class="field-label">Número exterior de domicilio fiscal<sup></sup></div>
-                                                                                    
-                                                                                    <input type="text" [(ngModel)]="asistente.numeroExteriorFiscal" name="numeroExteriorFiscal" #numeroExteriorFiscal="ngModel" value="" placeholder=""  class="gui-input">
-                                                                                    <div [hidden]="numeroExteriorFiscal.valid || numeroExteriorFiscal.pristine" class="alert alert-danger">
-                                                                                            Numero Exterior no válido
-                                                                                    </div>
-                                                                                </div>
-                                                                            <div class="form-group col-md-2 col-sm-2 col-xs-12">
-                                                                                <div class="field-label">Número interior de domicilio fiscal <sup></sup></div>
-                                                                                
-                                                                                <input type="text" [(ngModel)]="asistente.numeroInteriorFiscal" name="numeroInteriorFiscal" #numeroInteriorFiscal="ngModel" value="" placeholder=""  class="gui-input">
-                                                                                <div [hidden]="numeroInteriorFiscal.valid || numeroInteriorFiscal.pristine" class="alert alert-danger">
-                                                                                        Numero interior no válido
-                                                                                </div>
-                                                                            </div>
-                            
-                                                                        <div class="form-group col-md-4 col-sm-4 col-xs-12">
-                                                                            <div class="field-label">Estado de domicilio fiscal<sup>*</sup></div>
-                                                                            <label class="field select">
-                                                                            <select id="estado" required [(ngModel)]="asistente.estadoFiscal" name="estadoFiscal" #power="ngModel"class="gui-input">
-                                                                                <option value='aguascalientes'>aguascalientes</option>
-                                                                                <option value='Baja California'>Baja California</option>
-                                                                                <option value='Baja California Sur'>Baja California Sur</option>
-                                                                                <option value='Campeche'>Campeche</option>
-                                                                                <option value='Chiapas'>Chiapas</option>
-                                                                                <option value='Chihuahua'>Chihuahua</option>
-                                                                                <option value='Ciudad de México'>Ciudad de México</option>
-                                                                                <option value='Coahuila'>Coahuila</option>
-                                                                                <option value='Colima'>Colima</option>
-                                                                                <option value='Durango'>Durango</option>
-                                                                                <option value='Estado de México'>Estado de México</option>
-                                                                                <option value='Guanajuato'>Guanajuato</option>
-                                                                                <option value='Guerrero'>Guerrero</option>
-                                                                                <option value='Hidalgo'>Hidalgo</option>
-                                                                                <option value='Jalisco'>Jalisco</option>
-                                                                                <option value='Michoacán'>Michoacán</option>
-                                                                                <option value='Morelos'>Morelos</option>
-                                                                                <option value='Nayarit'>Nayarit</option>
-                                                                                <option value='Nuevo León'>Nuevo León</option>
-                                                                                <option value='Oaxaca'>Oaxaca</option>
-                                                                                <option value='Puebla'>Puebla</option>
-                                                                                <option value='Querétaro'>Querétaro</option>
-                                                                                <option value='Quintana Roo'>Quintana Roo</option>
-                                                                                <option value='San Luis Potosí'>San Luis Potosí</option>
-                                                                                <option value='Sinaloa'>Sinaloa</option>
-                                                                                <option value='Sonora'>Sonora</option>
-                                                                                <option value='Tabasco'>Tabasco</option>
-                                                                                <option value='Tamaulipas'>Tamaulipas</option>
-                                                                                <option value='Tlaxcala'>Tlaxcala</option>
-                                                                                <option value='Veracruz'>Veracruz</option>
-                                                                                <option value='Yucatán'>Yucatán</option>
-                                                                                <option value='Zacatecas'>Zacatecas</option>
-                                                                            </select><i class="arrow"></i>
-                                                                        </label>
-                                                                        </div>
-                                                
-                                                                        <!--Renglón-->
-                                                                        
-                                                
-                                                                        <div class="form-group col-md-5 col-sm-5 col-xs-12">
-                                                                                <div class="field-label">Colonia de domicilio fiscal<sup>*</sup></div>
-                                                                                <input type="text" required [(ngModel)]="asistente.coloniaFiscal" name="coloniaFiscal" #coloniaFiscal="ngModel" value="" placeholder="coloniaFiscal" class="gui-input">
-                                                                                <div [hidden]="coloniaFiscal.valid || coloniaFiscal.pristine" class="alert alert-danger">
-                                                                                        Se necesita una coloniaFiscal o municipio
-                                                                                </div>
-                                                                            </div>
-                                                                        
-                                                                        <div class="form-group col-md-5 col-sm-5 col-xs-12">
-                                                                            <div class="field-label">Ciudad de domicilio fiscal<sup>*</sup></div>
-                                                                            <input type="text" required [(ngModel)]="asistente.ciudadPoblacionFiscal" name="ciudadPoblacionFiscal" #ciudadPoblacionFiscal="ngModel" value="" class="gui-input">
-                                                                            <div [hidden]="ciudadPoblacionFiscal.valid || ciudadPoblacionFiscal.pristine" class="alert alert-danger">
-                                                                                    Se necesita una ciudad o población
-                                                                            </div>
-                                                                        </div>
-                                                
-                                                                        <div class="form-group col-md-4 col-sm-4 col-xs-12">
-                                                                            <div class="field-label">Código postal  de domicilio fiscal<sup>*</sup></div>
-                                                                            <input type="number" required [(ngModel)]="asistente.cpFiscal" name="cpFiscal" #cpFiscal="ngModel" value="" placeholder=""  class="gui-input">
-                                                                            <div [hidden]="cpFiscal.valid || cpFiscal.pristine" class="alert alert-danger">
-                                                                                    Se necesita el código postal
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <!--Renglón-->
-                                                                        
-                                                
-                                                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                                                <div class="field-label">Uso de CFDI<sup>*</sup></div>
-                                                                                <input type="text" required [(ngModel)]="asistente.usoCFDI" name="usoCFDI" #usoCFDI="ngModel" value=""  class="gui-input">
-                                                                                <div [hidden]="usoCFDI.valid || usoCFDI.pristine" class="alert alert-danger">
-                                                                                        Se necesita un CFDI
-                                                                                </div>
-                                                                            </div>
-                                                                        
-                                                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                                            <div class="field-label">Email para envío de factura <sup>*</sup></div>
-                                                                            <input type="email" required [(ngModel)]="asistente.emailFiscal" name="emailFiscal" #emailFiscal="ngModel" value="" class="gui-input">
-                                                                            <div [hidden]="emailFiscal.valid || emailFiscal.pristine" class="alert alert-danger">
-                                                                                    Se necesita una ciudad o población
-                                                                            </div>
-                                                                        </div>
-                                                
-                                                                        
-                                                                        
-                                                
-                                                                    </div>
-
-                                                                    
-                                        
-                                        <div class="section-divider mt20 mb40"><span> Información especial</span></div>
-                                                <!-- .section-divider-->
-                                                <div id="spy1" class="section row">
-                                            <!--Renglón-->
-                                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                    <div class="field-label">Notas<sup>*</sup></div>
-                                                    <input type="text" required [(ngModel)]="asistente.notas" name="notas" #notas="ngModel" value="" placeholder=""  class="gui-input">
-                                                    <div [hidden]="notas.valid || notas.pristine " class="alert alert-danger">
-                                                            
-                                                    </div>
-                                                    
-                                                </div>
-                        
-                                                
-                                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                    <div class="field-label">Tipo de asistente <sup>*</sup></div>
-                                                    <input type="text" required [(ngModel)]="asistente.tipoAsistente" name="tipoAsistente" #tipoAsistente="ngModel" value="" placeholder=""  class="gui-input">
-                                                    <div [hidden]="tipoAsistente.valid || tipoAsistente.pristine" class="alert alert-danger">
-                                                            Se necesita un Teléfono de quien inscribe
-                                                    </div>
-                                                </div>
-
-                                                <!--renglon-->
-                                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                        <div class="field-label">Tipo de inscripción <sup>*</sup></div>
-                                                        <div class="option-group field">
-                                                                <label for="female" class="option option-primary block">
-                                                                  <input id="female" type="radio" name="gender" value="female"><span class="radio"></span> Experiencia IBF PLUS
-                                                                </label>
-                                                                <label for="male" class="option block option-primary mt10">
-                                                                  <input id="male" type="radio" name="gender" value="male"><span class="radio"></span>Experiencia IBF
-                                                                </label>
-                                                                
-                                                              </div>
-                                                    </div>
-                                                
-
-
-                                                    <!--Renglon-->
-
-                                                    
-                            
-                                                    
-                                                    
-
-
-                                                </div>
-
-
-
-                                 
-                                 
-                            <!--End Checkout Details-->
-                    
-                         
-                            <!--Payment Box-->
-                            <div class="payment-box" [hidden]="submitted">
-                                <div class="upper-box">
-                    
-                                  
-                    
-                                </div>
-                                <div class="lower-box text-right">
-                                    <div class="shop_btn_wrapper checkout_btn">
-                                        
-                                                    <div [hidden]="!errorCoincidenciaCorreo " class="alert alert-danger">
-                                                            Error! El correo electrónico ya se ha registrado
-                                                        </div>
-                                            
-                                                <button type="button" class="btn btn-danger" style="margin-right: 20px;" (click)="atras()">Cancelar</button>
-                                                <button type="button" class="btn btn-success" [disabled]="!asistenteForm.form.valid"(click)="guardar()">Guardar</button>
-                                                
-                                            
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <!--End Payment Box-->
-                            </form>
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                          <button
+                          type="button"
+                          class="btn btn-default"
+                            (click)="atras()"
+                            type="button"
+                          >
+                            Nuevo registro
+                          </button>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                          <button
+                          type="button"
+                          class="btn btn-default"
+                            routerLink="/inicio"
+                            type="button"
+                          >
+                            Atrás
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- begin: .tray-right-->
-          
-        </section>
-        
-      </section>
+            <!-- fin mensaje agregado -->
 
-      
+            <!--Column-->
+            <div [hidden]="submitted">
+              <div class="panel-body bg-light">
+                <div class="section-divider mt20 mb40">
+                  <span> Información personal</span>
+                </div>
+                <!-- .section-divider-->
+                <div
+                  id="spy1"
+                  class="row"
+                  style="padding-left: 5%; padding-right: 5% "
+                >
+                  <!--Form Group-->
+                  <!--Renglón-->
+
+                  <div class="form-group col-md-4 col-sm-4 col-xs-12">
+                    <div class="field-label">Nombre <sup>*</sup></div>
+                    <input
+                      type="text"
+                      required
+                      [(ngModel)]="asistente.nombre"
+                      name="nombre"
+                      #nombre="ngModel"
+                      value=""
+                      placeholder=""
+                      class="gui-input"
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="nombre.valid || nombre.pristine"
+                      class="alert alert-danger"
+                    >
+                      Se necesita un nombre
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <div class="field-label">Apellido paterno<sup>*</sup></div>
+                    <input
+                      type="text"
+                      required
+                      [(ngModel)]="asistente.apellidoPaterno"
+                      name="apellidoPaterno"
+                      #apellidoPaterno="ngModel"
+                      value=""
+                      placeholder=""
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="
+                        apellidoPaterno.valid || apellidoPaterno.pristine
+                      "
+                      class="alert alert-danger"
+                    >
+                      Se necesita el apellido paterno
+                    </div>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <div class="field-label">Apellido materno<sup>*</sup></div>
+                    <input
+                      type="text"
+                      required
+                      [(ngModel)]="asistente.apellidoMaterno"
+                      name="apellidoMaterno"
+                      #apellidoMaterno="ngModel"
+                      value=""
+                      placeholder=""
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="
+                        apellidoMaterno.valid || apellidoMaterno.pristine
+                      "
+                      class="alert alert-danger"
+                    >
+                      Se necesita el apellido materno
+                    </div>
+                  </div>
+                  <!--Renglón-->
+                  <div class="form-group col-md-4 col-sm-4 col-xs-12">
+                    <div class="field-label">Email <sup>*</sup></div>
+                    <input
+                      type="text"
+                      required
+                      [(ngModel)]="asistente.email"
+                      [email]="true"
+                      name="email"
+                      #email="ngModel"
+                      value=""
+                      placeholder=""
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="email.valid || email.pristine"
+                      class="alert alert-danger"
+                    >
+                      Email inválido
+                    </div>
+                    <div
+                      [hidden]="!errorCoincidenciaCorreo"
+                      class="alert alert-danger"
+                    >
+                      Error! El correo electrónico ya se ha registrado
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-4 col-sm-4 col-xs-12">
+                    <div class="field-label">Teléfono <sup>*</sup></div>
+                    <input
+                      type="tel"
+                      required
+                      [(ngModel)]="asistente.telefono"
+                      name="telefono"
+                      #telefono="ngModel"
+                      value=""
+                      placeholder=""
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="telefono.valid || telefono.pristine"
+                      class="alert alert-danger"
+                    >
+                      Se necesita un telefono
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-4 col-sm-4 col-xs-12">
+                    <div class="field-label">No. pedido <sup>*</sup></div>
+                    <input
+                      type="tel"
+                      required
+                      [(ngModel)]="asistente.numeroPedido"
+                      name="numeroPedido"
+                      #numeroPedido="ngModel"
+                      value=""
+                      placeholder=""
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="numeroPedido.valid || numeroPedido.pristine"
+                      class="alert alert-danger"
+                    >
+                      Se necesita un Número de pedido
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-divider mt20 mb40">
+                  <span> Datos de la empresa</span>
+                </div>
+                <!-- .section-divider-->
+                <div
+                  id="spy1"
+                  class=" row"
+                  style="padding-left: 5%; padding-right: 5% "
+                >
+                  <!--Renglón-->
+                  <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                    <div class="field-label">Empresa <sup>*</sup></div>
+                    <input
+                      type="text"
+                      required
+                      [(ngModel)]="asistente.empresa"
+                      name="empresa"
+                      #empresa="ngModel"
+                      value=""
+                      placeholder=""
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="empresa.valid || titulo.pristine"
+                      class="alert alert-danger"
+                    >
+                      Empresa inválida
+                    </div>
+                  </div>
+
+                  <!--Renglon-->
+
+                  <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                    <div class="field-label">Tíltulo <sup>*</sup></div>
+                    <input
+                      type="text"
+                      required
+                      [(ngModel)]="asistente.titulo"
+                      name="titulo"
+                      #titulo="ngModel"
+                      value=""
+                      placeholder=""
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="titulo.valid || titulo.pristine"
+                      class="alert alert-danger"
+                    >
+                      Título inválido
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-divider mv40"><span> Domicilio</span></div>
+                <!-- .section-divider-->
+                <div class=" row" style="padding-left: 5%; padding-right: 5% ">
+                  <!--Renglón-->
+                  <div class="form-group col-md-4 col-sm-4 col-xs-12">
+                    <div class="field-label">Calle <sup>*</sup></div>
+                    <input
+                      type="text"
+                      required
+                      [(ngModel)]="asistente.calle"
+                      name="calle"
+                      #calle="ngModel"
+                      value=""
+                      placeholder="Calle "
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="calle.valid || calle.pristine"
+                      class="alert alert-danger"
+                    >
+                      Se necesita una calle
+                    </div>
+                  </div>
+                  <div class="form-group col-md-2 col-sm-2 col-xs-12">
+                    <div class="field-label">Número exterior <sup></sup></div>
+
+                    <input
+                      type="text"
+                      [(ngModel)]="asistente.numeroExterior"
+                      name="numeroExterior"
+                      #numeroExterior="ngModel"
+                      value=""
+                      placeholder=""
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="numeroExterior.valid || numeroExterior.pristine"
+                      class="alert alert-danger"
+                    >
+                      Numero Exterior no válido
+                    </div>
+                  </div>
+                  <div class="form-group col-md-2 col-sm-2 col-xs-12">
+                    <div class="field-label">Número interior <sup></sup></div>
+
+                    <input
+                      type="text"
+                      [(ngModel)]="asistente.numeroInterior"
+                      name="numeroInterior"
+                      #numeroInterior="ngModel"
+                      value=""
+                      placeholder=""
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="numeroInterior.valid || numeroInterior.pristine"
+                      class="alert alert-danger"
+                    >
+                      Numero interior no válido
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-4 col-sm-4 col-xs-12">
+                    <div class="field-label">Estado <sup>*</sup></div>
+                    <label class="field select">
+                      <select
+                        id="estado"
+                        required
+                        [(ngModel)]="asistente.estado"
+                        name="estado"
+                        #power="ngModel"
+                        class="gui-input"
+                      >
+                        <option value="aguascalientes">aguascalientes</option>
+                        <option value="Baja California">Baja California</option>
+                        <option value="Baja California Sur"
+                          >Baja California Sur</option
+                        >
+                        <option value="Campeche">Campeche</option>
+                        <option value="Chiapas">Chiapas</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value="Ciudad de México"
+                          >Ciudad de México</option
+                        >
+                        <option value="Coahuila">Coahuila</option>
+                        <option value="Colima">Colima</option>
+                        <option value="Durango">Durango</option>
+                        <option value="Estado de México"
+                          >Estado de México</option
+                        >
+                        <option value="Guanajuato">Guanajuato</option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Hidalgo">Hidalgo</option>
+                        <option value="Jalisco">Jalisco</option>
+                        <option value="Michoacán">Michoacán</option>
+                        <option value="Morelos">Morelos</option>
+                        <option value="Nayarit">Nayarit</option>
+                        <option value="Nuevo León">Nuevo León</option>
+                        <option value="Oaxaca">Oaxaca</option>
+                        <option value="Puebla">Puebla</option>
+                        <option value="Querétaro">Querétaro</option>
+                        <option value="Quintana Roo">Quintana Roo</option>
+                        <option value="San Luis Potosí">San Luis Potosí</option>
+                        <option value="Sinaloa">Sinaloa</option>
+                        <option value="Sonora">Sonora</option>
+                        <option value="Tabasco">Tabasco</option>
+                        <option value="Tamaulipas">Tamaulipas</option>
+                        <option value="Tlaxcala">Tlaxcala</option>
+                        <option value="Veracruz">Veracruz</option>
+                        <option value="Yucatán">Yucatán</option>
+                        <option value="Zacatecas">Zacatecas</option> </select
+                      ><i class="arrow"></i>
+                    </label>
+                  </div>
+
+                  <!--Renglón-->
+
+                  <div class="form-group col-md-5 col-sm-5 col-xs-12">
+                    <div class="field-label">Colonia <sup>*</sup></div>
+                    <input
+                      type="text"
+                      required
+                      [(ngModel)]="asistente.colonia"
+                      name="colonia"
+                      #colonia="ngModel"
+                      value=""
+                      placeholder="Colonia"
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="colonia.valid || colonia.pristine"
+                      class="alert alert-danger"
+                    >
+                      Se necesita una colonia o municipio
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-5 col-sm-5 col-xs-12">
+                    <div class="field-label">Ciudad <sup>*</sup></div>
+                    <input
+                      type="text"
+                      required
+                      [(ngModel)]="asistente.ciudadPoblacion"
+                      name="ciudad"
+                      #ciudad="ngModel"
+                      value=""
+                      placeholder="Ciudad o población"
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="ciudad.valid || ciudad.pristine"
+                      class="alert alert-danger"
+                    >
+                      Se necesita una ciudad o población
+                    </div>
+                  </div>
+
+                  <!--Form Group-->
+                  <div class="form-group col-md-2 col-sm-2 col-xs-12">
+                    <div class="field-label">Código postal <sup>*</sup></div>
+                    <input
+                      type="number"
+                      required
+                      [(ngModel)]="asistente.cp"
+                      name="cp"
+                      #cp="ngModel"
+                      value=""
+                      placeholder=""
+                      class="gui-input"
+                    />
+                    <div
+                      [hidden]="cp.valid || cp.pristine"
+                      class="alert alert-danger"
+                    >
+                      Se necesita el código postal
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-divider mt20 mb40">
+                  <span> Tipo de inscripción</span>
+                </div>
+                <!-- .section-divider-->
+                <div
+                  id="spy1"
+                  class=" row"
+                  style="padding-left: 5%; padding-right: 5% "
+                >
+                  <!--renglon-->
+                  <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                    
+
+                    <div class="field-label">Producto <sup>*</sup></div>
+                    <label class="field select">
+                      <select
+                        id="estado"
+                        required
+                        [(ngModel)]="asistente.estado"
+                        name="estado"
+                        #power="ngModel"
+                        class="gui-input"
+                      >
+                        <option value="xperiencia IBF">Experiencia IBF</option>
+                        <option value="Experiencia IBF Plus">Experiencia IBF Plus</option>
+                        
+                        </select
+                      ><i class="arrow"></i>
+                    </label>
+                  </div>
+
+                  <!--Renglon-->
+                </div>
+              </div>
+
+              <!--End Checkout Details-->
+
+              <!--Payment Box-->
+              <div class="payment-box" [hidden]="submitted">
+                <div class="upper-box"></div>
+                <div class="lower-box text-right">
+                  <div class="shop_btn_wrapper checkout_btn">
+                    <div
+                      [hidden]="!errorCoincidenciaCorreo"
+                      class="alert alert-danger"
+                    >
+                      Error! El correo electrónico ya se ha registrado
+                    </div>
+
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      style="margin-right: 20px;"
+                      (click)="atras()"
+                    >
+                      Cancelar
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-success"
+                      [disabled]="!asistenteForm.form.valid"
+                      (click)="guardarAsistente()"
+                    >
+                      Guardar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Payment Box-->
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- begin: .tray-right-->
+  </section>
+</section>

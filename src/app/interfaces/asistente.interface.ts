@@ -1,7 +1,8 @@
 export class Asistente {
     key: string;
     nombre: string;
-    apellidos: string;
+    apellidoPaterno: string;
+    apellidoMaterno: string;
     nombreCompleto: string;
     nombreBusqueda: string;
     empresa: string;
@@ -48,6 +49,7 @@ export class Asistente {
     horaAsistencia: number;
     numeroCoparmex: string;
     numeroGafetesImpresos: number;
+    numeroPedido: string;
 
 
 
