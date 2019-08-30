@@ -24,11 +24,12 @@ export class NuevoRegistroComponent implements OnInit {
     console.log('guardar');
     this.guardarService.nuevoParticipante(this.asistente).subscribe ( (data) => {
 
+      // tslint:disable-next-line:no-string-literal
       if (data['estado'] === 1) {
-        console.log('si guardó');
+        console.log('si guardó ' + data);
         this.submitted = true;
       } else {
-        console.log('No guardó');
+        console.log('No guardó' + data);
       }
     });
 

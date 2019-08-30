@@ -50,6 +50,7 @@ export class Asistente {
     numeroCoparmex: string;
     numeroGafetesImpresos: number;
     numeroPedido: string;
+    producto: string;
 
 
 

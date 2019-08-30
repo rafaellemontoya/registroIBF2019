@@ -7,12 +7,14 @@ import { HeaderComponent } from './shared/header/header.component';
 import { NuevoRegistroComponent } from './pages/nuevo-registro/nuevo-registro.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { BuscarRegistroComponent } from './pages/buscar-registro/buscar-registro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NuevoRegistroComponent
+    NuevoRegistroComponent,
+    BuscarRegistroComponent
   ],
   imports: [
     BrowserModule,
